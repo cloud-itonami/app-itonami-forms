@@ -30,7 +30,7 @@
   This returns `{:columns … :rows …}` and stops. Turning it into a workbook
   needs both this library and `sheets`, so it belongs to whoever already has
   both rather than making every consumer of `forms` carry `sheets`."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn cell
   "One answer as the text a cell holds.

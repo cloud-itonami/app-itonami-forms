@@ -1,5 +1,5 @@
 (ns forms.model
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def field-types #{:text :textarea :email :number :date :choice :checkbox})
 
