@@ -2,7 +2,12 @@
  ;; Current transit rather than the 77e3ce7d that sheets and docs pin:
  ;; :forms/form is only an admitted office resource kind here. See
  ;; forms.wire's docstring for what that costs on the read side.
- :deps {io.github.kotoba-lang/transit
+ :deps {
+        ;; kotoba.lang.text, not clojure.string. Pinned as an explicit floor:
+        ;; tools.deps takes the NEWEST sha it is shown, so without a floor here
+        ;; this repo silently rides whatever a sibling happens to name.
+        io.github.kotoba-lang/text {:git/sha "73bdb13ae7a3d004b44bca08be03a3191157a38f"}
+       io.github.kotoba-lang/transit
         {:git/url "https://github.com/kotoba-lang/transit.git"
          :git/sha "ab5d9d956e088d77d7f91357f36a4a0c6bdfcadc"}}
  :aliases
