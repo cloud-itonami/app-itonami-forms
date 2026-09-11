@@ -53,6 +53,6 @@ too, so that belongs to whoever already has both.
 ## Test
 
 ```bash
-clojure -M:test                                                       # JVM
-nbb --classpath "src:test:$(clojure -Spath)" scripts/test-cljs.cljk   # ClojureScript
+kbb -M:test                                                       # JVM
+kbb --backend sci --classpath "src:test:$(kbb -Spath)" scripts/test-cljs.cljk   # ClojureScript
 ```
