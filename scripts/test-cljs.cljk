@@ -4,7 +4,7 @@
 ;; `sheets` shipped two bugs that existed only under ClojureScript before
 ;; anything ran there.
 ;;
-;;   nbb --classpath "src:test:$(clojure -Spath)" scripts/test-cljs.cljs
+;;   nbb --classpath "src:test:$(clojure -Spath)" scripts/test-cljs.cljk
 
 (require '[clojure.test :as t] 'forms.model-test 'forms.responses-test 'forms.validate-test)
 

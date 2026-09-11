@@ -54,5 +54,5 @@ too, so that belongs to whoever already has both.
 
 ```bash
 clojure -M:test                                                       # JVM
-nbb --classpath "src:test:$(clojure -Spath)" scripts/test-cljs.cljs   # ClojureScript
+nbb --classpath "src:test:$(clojure -Spath)" scripts/test-cljs.cljk   # ClojureScript
 ```
