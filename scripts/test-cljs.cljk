@@ -6,7 +6,7 @@
 ;;
 ;;   kbb --backend sci --classpath "src:test:$(kbb -Spath)" scripts/test-cljs.cljk
 
-(require '[clojure.test :as t] 'forms.model-test 'forms.responses-test 'forms.validate-test)
+(require '[kotoba.test :as t] 'forms.model-test 'forms.responses-test 'forms.validate-test)
 
 (let [{:keys [fail error]} (t/run-tests 'forms.model-test 'forms.responses-test 'forms.validate-test)]
   (when (pos? (+ (or fail 0) (or error 0)))

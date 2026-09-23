@@ -1,5 +1,5 @@
 (ns forms.model-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [forms.model :as f]
             [forms.validate :as v]
             [forms.wire :as wire]))
