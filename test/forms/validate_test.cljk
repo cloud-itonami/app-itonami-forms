@@ -4,7 +4,7 @@
   There was no test file here at all: the validator is what an application
   asks before it saves a form or keeps an answer, and it was the only part
   of this library nothing ran."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [forms.model :as model]
             [forms.validate :as validate]))
 
